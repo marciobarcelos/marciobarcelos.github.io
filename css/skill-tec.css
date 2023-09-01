@@ -1,0 +1,26 @@
+.skill-tec {
+    display: flex;
+    align-items: center;
+    font-family: 'Darker Grotesque', sans-serif;
+    font-size: 27px;
+    margin-bottom: 38px;
+    color: #212121;
+}
+
+.skill-tec .icon {
+    margin-right: 25px;
+    max-width: 70px;
+}
+
+.skill-tec .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.skill-tec .title {
+    margin-bottom: 9px;
+}
+
+
+
