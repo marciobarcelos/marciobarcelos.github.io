@@ -1,9 +1,10 @@
 .progress-bar {
     box-sizing: border-box;
-    background-color: #FFF;
-    border: 2px solid #141414  ;
-    height: 20px;
+    height: 14px;
     width: 320px;
+    position: relative;
+    background-color: #333;
+    transform: skew(30deg);
 }
 
 .progress-bar::-webkit-progress-bar,
@@ -15,4 +16,3 @@
 .progress-bar::-moz-progress-bar {
     background-color: #0BBF64;
 }
-

@@ -1,0 +1,19 @@
+.main-footer {
+  display: flex;
+  background-color: transparent;
+  justify-content: center;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.main-footer .action-footer {
+  display: flex;
+  margin-left: 20px;
+  margin-right: 20px;
+  object-fit: contain;
+}
+
+.main-footer {
+  display: flex;
+  height: 50px;
+}

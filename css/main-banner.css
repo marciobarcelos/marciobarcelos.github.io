@@ -1,34 +1,27 @@
-.banner {
+.main-banner {
     box-sizing: border-box;
-    background: #fff;
-    box-shadow: 0 1px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 5.5px );
-    -webkit-backdrop-filter: blur( 5.5px );
     background-repeat: no-repeat;
     background-size: 100%;
     height: 563px;
     padding: 80px;
 }
 
-.banner .wrapper {
+.main-banner .wrapper {
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     width: 380px;
     align-items: center;
 }
 
-.banner .box {
-    margin-bottom: 10px;
-}
-
-.banner .navigation {
+.main-banner .navigation {
     display: flex;
     justify-content: space-between;
 }
 
-.banner .profile-image {
-    border: 4px solid #212121;
+.main-banner .personal-image {
+    max-width: 100%;
+    height: auto;
     display: flex;
     float: right;
-    
 }

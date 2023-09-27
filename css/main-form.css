@@ -1,0 +1,189 @@
+/*.form-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    width: 100%;
+    max-width: 540px;
+    font-family: 'Darker Grotesque', sans-serif;
+    font-size: 18px;
+    color: #FFFAF0;
+    display: block;
+}
+
+.form-msg {
+    font-size: 22px;
+    display: block;
+    text-align: center;
+}
+
+button {
+    display: block;
+}
+
+input,
+textarea,
+button {
+    width: 100%;
+    padding: 8px;
+    font-weight: 700;
+}
+
+input,
+textarea {
+    font: inherit;
+    padding: 6px;
+    border: 1px solid transparent;
+}
+
+input,
+textarea {
+    margin-bottom: 1rem;
+    background: #0f0f0f;
+    border: 0.125rem transparent;
+    transition: border-color 0.3s,
+    box-shadow 0.3s;
+}
+
+input:hover,
+input:focus,
+textarea:hover,
+textarea:focus {
+    outline: none;
+    border-color: #FFFAF0;
+    box-shadow: 0 0 0 1px #FFFAF0;
+}
+
+label {
+    margin-bottom: 9px;
+    color: #FFFAF0;
+}
+
+textarea {
+    min-height: 225px;
+    resize: vertical;
+}
+
+button {
+    border: none;
+    color: #FFF;
+    background: #0072c4;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover,
+button:focus {
+    outline: none;
+    background: #09d;
+}
+
+button:disabled {
+    cursor: not-allowed;
+    background: #555b69;
+}*/
+
+
+
+.main-input {
+    box-sizing: border-box;
+    border: 1px #FFFAF0;
+    font-size: 16px;
+    height: 20px;
+    width: 100%;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: #FFFAF0;
+    border-radius: 2px;
+}
+
+.main-input.-text-area {
+    height: 225px;
+    resize: vertical;
+    font-family: 'Darker Grotesque', sans-serif;
+    font-size: 22px;
+}
+
+.main-form .main-label {
+    box-sizing: border-box;
+    color: #FFFAF0;
+    font-family: 'Darker Grotesque', sans-serif;
+    font-size: 22px;
+}
+
+.button-form.-full {
+    width: 100%;
+}
+
+.button-form {
+    border: none;
+    color: #FFF;
+    background: #0072c4;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 12px;
+    font-weight: 700;
+    border-radius: 2px;
+}
+
+.button-form:hover,
+.button-form:focus {
+    outline: none;
+    background: #09d;
+}
+
+.button-form:disabled {
+    cursor: not-allowed;
+    background: #555b69;
+}
+
+.main-form {
+    padding-left: 140px;
+    padding-right: 140px;
+    padding-bottom: 30px;
+}
+
+.main-form .main-input {
+    margin-bottom: 20px;
+}
+
+.form-msg {
+    font-size: 24px;
+    display: block;
+    text-align: center;
+    color: #FFFAF0;
+    font-family: 'Darker Grotesque', sans-serif;
+}
+
+.main-input {
+    margin-bottom: 1rem;
+    background: #0f0f0f;
+    border: 0.125rem transparent;
+    transition: border-color 0.3s,
+    box-shadow 0.3s;
+}
+
+.main-input:hover,
+.main-input:focus,
+.-text-area:hover,
+.-text-area:focus {
+    outline: none;
+    border-color: #FFFAF0;
+    box-shadow: 0 0 0 1px #FFFAF0;
+}
+
+.success,
+.error {
+    text-align: center;
+}
+
+.success {
+    color: greenyellow;
+}
+
+.error {
+    color: tomato;
+}
+

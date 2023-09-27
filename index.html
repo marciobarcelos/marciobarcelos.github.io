@@ -5,27 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Márcio Barcelos - Personal Website</title>
 
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@300&family=Darker+Grotesque&display=swap" rel="stylesheet">
     
-    
-
     <link rel="stylesheet" href="css/main-action.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main-title.css">
+    <link rel="stylesheet" href="css/main-subtitle.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/banner.css">
-    <link rel="stylesheet" href="css/button.css">
-    <link rel="stylesheet" href="css/box.css">
-    <link rel="stylesheet" href="css/section.css">
+    <link rel="stylesheet" href="css/main-banner.css">
+    <link rel="stylesheet" href="css/main-button.css">
+    <link rel="stylesheet" href="css/main-box.css">
+    <link rel="stylesheet" href="css/main-section.css">
     <link rel="stylesheet" href="css/skill-tec.css">
     <link rel="stylesheet" href="css/progress-bar.css">
     <link rel="stylesheet" href="css/wrapper-skill.css">
     <link rel="stylesheet" href="css/wrapper-card.css">
     <link rel="stylesheet" href="css/card-project.css">
+    <link rel="stylesheet" href="css/main-description.css">
+    <link rel="stylesheet" href="css/main-footer.css">
+    <link rel="stylesheet" href="css/main-form.css">
     
+    <script src="js/script.js"></script>
 
 </head>
 <body>
@@ -34,30 +36,29 @@
         <nav>
             <a class="main-action" href="#">Skills</a>
             <a class="main-action" href="#">Projects</a>
-            <a class="main-action" href="#">Contact</a>
             <a class="main-action" href="#">About</a>
+            <a class="main-action" href="#">Contact</a>
         </nav>    
     </header>
     
-    <section class="banner">
-        <div class="profile-image">
-            <img src="assets/image/mbp.png" alt="marcio barcelos logo">
+    <section class="main-banner">
+        <div>
+            <img class="personal-image" src="assets/image/mbp.png" alt="marcio barcelos logo">
         </div>
         <div class="wrapper">
-            <div class="box">
-                <h2 class="main-title">Hello, my name is Márcio.</h2>
-                <h3 class="subtitle">I am a Front-End Developer</h3>
+            <div class="main-box">
+                <h2 class="main-title">Marcio Barcelos</h2>
+                <h3 class="main-subtitle">Desenvolvedor Front-End.</h3>
             </div>
             
             <div class="navigation">
-                <a class="button" href="#">See my work</a>
-                <a class="button" href="#">Contact</a>
+                <a class="main-button" onclick="window.location.href='#projetos'">Projetos</a>
+                <a class="main-button" onclick="window.location.href='#contato'">Contato</a>
             </div>
         </div>
-        
     </section>
 
-    <section class="section">
+    <section class="main-section">
         <h2 class="main-title -second">Skills</h2>
         
         <div class="wrapper-skill">
@@ -124,32 +125,94 @@
                     <progress class="progress-bar" max="100" value="70">70%</progress>
                 </div>
             </article>
+
+            <article class="skill-tec">
+                <img class="icon" src="assets/image/bootstrap.png" alt="Logo Git">
+                <div class="right">
+                    <h3 class="title">Bootstrap</h3>
+                    <progress class="progress-bar" max="100" value="70">70%</progress>
+                </div>
+            </article>
+
+            <article class="skill-tec">
+                <img class="icon" src="assets/image/sass.png" alt="Logo Git">
+                <div class="right">
+                    <h3 class="title">Sass</h3>
+                    <progress class="progress-bar" max="100" value="70">70%</progress>
+                </div>
+            </article>
         </div>
     </section>
 
-    <section class="section">
-        <h2 class="main-title -second">Projects</h2>
+    <section class="main-section -projects" id="projetos">
+        <h2 class="main-title -second">Projetos</h2>
         
         <div class="wrapper-card">
 
             <a href="#" target="_blank">
                 <figure class="card-project">
-                    <img class="logo" src="assets/image/" alt="">
+                    <img class="logo" src="assets/image/pimentel-mobili.png" alt="">
                 </figure>
             </a>
-
             <a href="#" target="_blank">
                 <figure class="card-project">
-                    <img class="logo" src="assets/image/logo-zeck.png" alt="">
+                    <img class="logo" src="assets/image/gogo-delivery.PNG" alt="">
                 </figure>
             </a>
-
             <a href="#" target="_blank">
                 <figure class="card-project">
-                    <img class="logo" src="assets/image/portfolio.png" alt="">
+                    <img class="logo" src="assets/image/tribarin.png" alt="">
                 </figure>
             </a>
         </div>
     </section>
+
+    <section class="main-section">
+        <h2 class="main-title -second">Sobre</h2>
+            <p class="main-description">
+            Olá! Sou o Marcio, um Desenvolvedor Front-End apaixonado por criar experiências incríveis na web. Minha jornada no desenvolvimento web começou com HTML e CSS, onde aprendi a arte de criar layouts atraentes e responsivos.
+            <br>
+            <br>
+            Com o tempo, aprimorei meu estilo de codificação, incorporando o Bootstrap e Sass para tornar o desenvolvimento web mais eficiente e elegante. No dinâmico mundo do JavaScript, venho aprimorando meu conhecimento com React, Angular e TypeScript para garantir um código robusto e seguro.
+            <br>
+            <br>
+            Adoro encarar desafios e transformar ideias criativas em produtos de alta qualidade. Meu foco principal é a missão de criar interfaces de usuário intuitivas e visualmente atraentes, proporcionando a melhor experiência possível aos usuários. Estou sempre de olho em novas tecnologias e tendências no mundo do desenvolvimento Front-End e pronto para abraçar o que vem por aí.
+            </p>
+    </section>
+
+    <div class="main-form">
+        <h2 class="main-title -second" id="contato">Contato</h2>
+        <form action="https://formsubmit.co/ajax/marciobarcelospimentel@gmail.com" method="POST" data-form>
+    
+            <p class="form-msg">Tem uma pergunta, proposta, ou apenas quer dizer um oi?
+                <br>
+                Vá em frente.
+            </p>
+            
+            <label class="main-label" for="nome">Nome</label>
+            <input class="main-input" type="text" name="nome" id="nome" placeholder="Digite seu nome" required/>
+    
+            <label class="main-label" for="email">E-mail</label>
+            <input class="main-input" type="email" name="email" id="email" placeholder="Digite seu e-mail" required/>
+    
+            <label class="main-label" for="mensagem">Mensagem</label>
+            <textarea class="main-input -text-area" name="mensagem" id="mensagem" placeholder="Digite sua mensagem aqui..." required></textarea>
+            
+            <button class="button-form -full" type="submit" data-button>Enviar</button>
+            
+        </form>
+        
+        <div id="success-message" class="success-message"></div>
+        <div id="error-message" class="error-message"></div>
+    </div>
+    
+    <footer class="main-footer">
+        <a class="action-footer" href="https://www.linkedin.com/in/marcio-barcelos/" target="_blank">
+            <img class="icon" src="assets/image/linkedin.png" alt="LinkedIn">
+        </a>
+        <a class="action-footer" href="https://github.com/omrcio" target="_blank">
+            <img class="icon" src="assets/image/github.png" alt="Github">
+        </a>
+    </footer>
 </body>
 </html>

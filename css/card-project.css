@@ -1,8 +1,6 @@
 .card-project {
-    background-color: #212121;
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 250px;
-    height: 260px;
+    width: 210px;
+    height: 220px;
 }

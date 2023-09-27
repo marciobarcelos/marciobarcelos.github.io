@@ -1,9 +1,10 @@
-.button {
+.main-button {
   cursor: pointer;
   font-family: 'Darker Grotesque', sans-serif;
   font-size: 22px;
   text-decoration: none;
   color: #212121;
+  background-color: #FFFAF0;
   padding: 4px 26px;
   margin: 20px;
   display: inline-block;
@@ -15,9 +16,10 @@
   transition: transform 200ms linear, opacity .5s ease-in, background-color .5s ease-out;
 }
 
-.button:hover {
-  background-color: #1673fa;
-  color: #fff;
+.main-button:hover {
+  border-color: #09d;
+  background-color: #0072c4;
+  color: #FFFAF0;
   transition: opacity .5s ease-in, background-color .5s ease-out;
   transform: scale(1.08);
 }

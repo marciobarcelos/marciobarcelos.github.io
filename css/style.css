@@ -1,69 +1,18 @@
-body {
-    background-color: #fff;
-
+* {
+    background-color: #0f0f0f;
 }
 
 header {
     justify-content: space-between;
-    background-color: #fff;
-    border-bottom: 3px solid #FFF;
-    padding: 5px 5px;
+    border-bottom: 2px solid #fffaf0;
+    padding: 2px 2px;
     display: flex;
     align-items: center;
 }
 
 .logo-header {
     font-family: 'Darker Grotesque', sans-serif;
-    font-size: 26px;
+    font-size: 22px;
     margin-left: 30px;
-    color: #212121;
+    color: #CCC8AA;
 }
-
-/*h1 {
-    font-family: 'Antonio', sans-serif;
-    color: #0287CC;
-    font-size: 30px;
-    padding-left: 20px;
-}*/
-
-/*a {
-    color: #fff;
-    font-size: 18px;
-    text-decoration: none;
-    font-family: 'Antonio', sans-serif;
-    font-weight: 500;
-    padding: 15px 6px;
-    display: inline-flex;
-    align-items: center;
-    text-decoration: none;
-    margin-right: 30px;
-}
-
-a::before {
-    content: "";
-    background-color: #36f;
-    width: 8px;
-    height:8px;
-    margin-right: 8px;
-    border-radius: 5px;
-    text-align: center;
-}*/
-
-
-
-/*#button {
-    background-color: #636e72;
-    /*width: 170;
-    height: 60;
-    box-shadow: 3px 3px 2px #3A4042;
-    padding: 18px 20px;
-    margin-right: 10px;
-    display: inline-block;
-    border-radius: 30px;
-    transition: transform 100ms linear;
-}
-
-#button:hover {
-    transform: scale(1.08);
-    opacity: .5;
-}*/

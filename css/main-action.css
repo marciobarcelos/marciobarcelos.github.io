@@ -1,6 +1,6 @@
 .main-action {
-    color: #212121;
-    font-size: 26px;
+    color: #fffaf0;
+    font-size: 20px;
     text-decoration: none;
     font-family: 'Darker Grotesque', sans-serif;
     font-weight: 500;
@@ -8,14 +8,4 @@
     display: inline-flex;
     align-items: center;
     margin-right: 30px;
-}
-
-.main-action::before {
-    content: "";
-    background-color: #1673fa;
-    width: 8px;
-    height:8px;
-    margin-right: 8px;
-    border-radius: 5px;
-    text-align: center;
 }
