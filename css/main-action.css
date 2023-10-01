@@ -1,11 +1,17 @@
 .main-action {
-    color: #fffaf0;
-    font-size: 20px;
+    color: #0f0f0f;
+    font-size: 22px;
     text-decoration: none;
     font-family: 'Darker Grotesque', sans-serif;
-    font-weight: 500;
+    font-weight: 600;
     padding: 15px 6px;
     display: inline-flex;
     align-items: center;
     margin-right: 30px;
+    cursor: pointer;
+}
+
+.main-action:hover {
+	transition: opacity .5s ease-in, background-color .5s ease-out;
+  transform: scale(1.18);
 }

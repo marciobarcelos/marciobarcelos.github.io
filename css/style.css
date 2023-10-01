@@ -1,10 +1,10 @@
-* {
-    background-color: #0f0f0f;
+body {
+    background-color: #fffaf0 /*#0f0f0f*/;
 }
 
 header {
     justify-content: space-between;
-    border-bottom: 2px solid #fffaf0;
+    border-bottom: 2px solid #C3C0B8;
     padding: 2px 2px;
     display: flex;
     align-items: center;
@@ -12,7 +12,9 @@ header {
 
 .logo-header {
     font-family: 'Darker Grotesque', sans-serif;
-    font-size: 22px;
+    font-weight: 600;
+    font-size: 28px;
     margin-left: 30px;
-    color: #CCC8AA;
+    color: #111111;
+    text-decoration: none;
 }

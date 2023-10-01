@@ -1,65 +1,67 @@
-class FormSubmit {
-    constructor(settings) {
-        this.settings = settings;
-        this.form = document.querySelector(settings.form);
-        this.formButton = document.querySelector(settings.button);
-        if (this.form) {
-            this.url = this.form.getAttribute("action");
+
+let contactForm = document.querySelector('#contact-form');
+
+contactForm.addEventListener('submit', function(event){
+    event.preventDefault()
+    let nomeForm = document.querySelector('#nome').value;
+    let emailForm = document.querySelector('#email').value;
+    let mensagemForm = document.querySelector('#mensagem').value;
+    
+    // codigo teste
+    let formData = new FormData();
+    formData.append('nome', nomeForm);
+    formData.append('email', emailForm);
+    formData.append('mensagem', mensagemForm);
+
+    fetch('https://formsubmit.co/ajax/marciobarcelospimentel@gmail.com', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => {
+        if (response.ok) {
+            return response.text(); // Se a resposta for bem-sucedida, você pode retornar o texto da resposta
+        } else {
+            throw new Error('Ocorreu um erro durante o envio do formulário.');
         }
-        this.sendForm = this.sendForm.bind(this);
-    }
+    })
+    .then(data => {
+        // Limpar campos do formulário e exibir uma mensagem de sucesso
+        document.querySelector('#nome').value = '';
+        document.querySelector('#email').value = '';
+        document.querySelector('#mensagem').value = '';
 
-    displaySuccess() {
-        this.form.innerHTML = this.settings.success;
-    }
-
-    displayError() {
-        this.form.innerHTML = this.settings.error;
-    }
-
-    getFormObject() {
-        const formObject = {};
-        const fields = this.form.querySelectorAll("[name]");
-        fields.forEach((field) => {
-            formObject[field.getAttribute("name")] = field.value;
-        });
-        return formObject;
-    }
-
-    onSubmission(event) {
-        event.preventDefault();
-        event.target.disabled = true;
-        event.target.innerText = "Enviando...";
-    }
-
-    async sendForm(event) {
-        try {
-            this.onSubmission(event);
-            await fetch(this.url, {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                    Accept: "application/json",
-                },
-                body: JSON.stringify(this.getFormObject()),
-            });
-            this.displaySuccess();
-        } catch (error) {
-            this.displayError();
-            throw new Error(error);
-        }
-    }
-
-    init() {
-        if (this.form) this.formButton.addEventListener("click", this.sendForm);
-        return this;
-    }
-}
-
-let formSubmit = new FormSubmit({
-        form: "[data-form]",
-        button: "[data-button]",
-        success: "<h1 class='success'>Mensagem Enviada!</h1>",
-        error: "<h1 class='error'>Não foi possível enviar sua mensagem.</h1>",
+        let statusForm = document.querySelector('#status');
+        statusForm.textContent = 'Enviado com sucesso!';
+    }, 1500)
+    .catch(error => {
+        // Lidar com erros de envio
+        console.error('Erro:', error);
+        let statusForm = document.querySelector('#status');
+        statusForm.textContent = 'Erro ao enviar o formulário.';
     });
-    formSubmit.init();
+});
+
+
+window.onload = function () {
+    const btnBackToTop = document.querySelector('#back-to-top');
+
+    window.onscroll = function () {
+        if (document.documentElement.scrollTop > 100) {
+            btnBackToTop.style.display = 'block';
+        } else {
+            btnBackToTop.style.display = 'none';
+        }
+    };
+
+    btnBackToTop.onclick = function () {
+        scrollToTop();
+    };
+
+    function scrollToTop() {
+        const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        if (scrollTop > 0) {
+            window.requestAnimationFrame(scrollToTop);
+            window.scrollTo(0, scrollTop - scrollTop / 8);
+        }
+    }
+};

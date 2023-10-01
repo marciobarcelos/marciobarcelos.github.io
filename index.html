@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@300&family=Darker+Grotesque&display=swap" rel="stylesheet">
-    
+
     <link rel="stylesheet" href="css/main-action.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main-title.css">
@@ -18,26 +18,24 @@
     <link rel="stylesheet" href="css/main-button.css">
     <link rel="stylesheet" href="css/main-box.css">
     <link rel="stylesheet" href="css/main-section.css">
-    <link rel="stylesheet" href="css/skill-tec.css">
+    <link rel="stylesheet" href="css/skill-tec.css"> 
     <link rel="stylesheet" href="css/progress-bar.css">
-    <link rel="stylesheet" href="css/wrapper-skill.css">
+    <link rel="stylesheet" href="css/wrapper-skill.css"> 
     <link rel="stylesheet" href="css/wrapper-card.css">
     <link rel="stylesheet" href="css/card-project.css">
     <link rel="stylesheet" href="css/main-description.css">
     <link rel="stylesheet" href="css/main-footer.css">
     <link rel="stylesheet" href="css/main-form.css">
     
-    <script src="js/script.js"></script>
-
 </head>
 <body>
     <header>
-        <h1 class="logo-header">marciobarcelos</h1>
+        <a href="#home" class="logo-header">marciobarcelos</a>
         <nav>
-            <a class="main-action" href="#">Skills</a>
-            <a class="main-action" href="#">Projects</a>
-            <a class="main-action" href="#">About</a>
-            <a class="main-action" href="#">Contact</a>
+            <a class="main-action" onclick="window.location.href='#skills'">Skills</a>
+            <a class="main-action" onclick="window.location.href='#projetos'">Projetos</a>
+            <a class="main-action" onclick="window.location.href='#sobre'">Sobre</a>
+            <a class="main-action" onclick="window.location.href='#contato'">Contato</a>
         </nav>    
     </header>
     
@@ -47,8 +45,9 @@
         </div>
         <div class="wrapper">
             <div class="main-box">
-                <h2 class="main-title">Marcio Barcelos</h2>
-                <h3 class="main-subtitle">Desenvolvedor Front-End.</h3>
+                <h4>hey, I'm</h4>
+                <h2 class="main-title">Márcio Barcelos</h2>
+                <h3 class="main-subtitle -subtitle" >frontend developer</h3>
             </div>
             
             <div class="navigation">
@@ -59,7 +58,7 @@
     </section>
 
     <section class="main-section">
-        <h2 class="main-title -second">Skills</h2>
+        <h2 class="main-title -second" id="skills">Skills</h2>
         
         <div class="wrapper-skill">
             <article class="skill-tec">
@@ -151,7 +150,7 @@
 
             <a href="#" target="_blank">
                 <figure class="card-project">
-                    <img class="logo" src="assets/image/pimentel-mobili.png" alt="">
+                    <img class="logo" src="assets/image/tribarinsystech.png" alt="">
                 </figure>
             </a>
             <a href="#" target="_blank">
@@ -168,7 +167,7 @@
     </section>
 
     <section class="main-section">
-        <h2 class="main-title -second">Sobre</h2>
+        <h2 class="main-title -second" id="sobre">Sobre</h2>
             <p class="main-description">
             Olá! Sou o Marcio, um Desenvolvedor Front-End apaixonado por criar experiências incríveis na web. Minha jornada no desenvolvimento web começou com HTML e CSS, onde aprendi a arte de criar layouts atraentes e responsivos.
             <br>
@@ -182,9 +181,9 @@
 
     <div class="main-form">
         <h2 class="main-title -second" id="contato">Contato</h2>
-        <form action="https://formsubmit.co/ajax/marciobarcelospimentel@gmail.com" method="POST" data-form>
+        <form id="contact-form" action="https://formsubmit.co/ajax/marciobarcelospimentel@gmail.com" method="POST" data-form>
     
-            <p class="form-msg">Tem uma pergunta, proposta, ou apenas quer dizer um oi?
+            <p class="form-msg">Tem uma pergunta, proposta ou apenas quer dizer um oi?
                 <br>
                 Vá em frente.
             </p>
@@ -199,20 +198,21 @@
             <textarea class="main-input -text-area" name="mensagem" id="mensagem" placeholder="Digite sua mensagem aqui..." required></textarea>
             
             <button class="button-form -full" type="submit" data-button>Enviar</button>
-            
+            <p id="status"></p>
         </form>
-        
-        <div id="success-message" class="success-message"></div>
-        <div id="error-message" class="error-message"></div>
     </div>
     
+    <button id="back-to-top" title="Voltar ao Topo">↑ <br>Topo</button>
+
     <footer class="main-footer">
         <a class="action-footer" href="https://www.linkedin.com/in/marcio-barcelos/" target="_blank">
-            <img class="icon" src="assets/image/linkedin.png" alt="LinkedIn">
+            <img class="icon" src="assets/image/linkedin.png" alt="LinkedIn" title="LinkedIn">
         </a>
         <a class="action-footer" href="https://github.com/omrcio" target="_blank">
-            <img class="icon" src="assets/image/github.png" alt="Github">
+            <img class="icon" src="assets/image/github.png" alt="Github" title="Github">
         </a>
     </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>

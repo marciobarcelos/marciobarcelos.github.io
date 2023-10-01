@@ -1,18 +1,24 @@
 .progress-bar {
     box-sizing: border-box;
-    height: 14px;
+    height: 20px;
     width: 320px;
     position: relative;
-    background-color: #333;
-    transform: skew(30deg);
+    padding: 4px;
+    background-color: #2a2a2a;
+    border-radius: 8px;
+    box-shadow: 0px 1px 2px #808080;
+    
 }
 
 .progress-bar::-webkit-progress-bar,
 .progress-bar::-webkit-progress-value {
     width: 70%;
-    background-color: #0BBF64;
+    background: rgb(0,153,221);
+background: linear-gradient(0deg, rgba(0,153,221,1) 29%, rgba(148,187,233,1) 100%);
+    border-radius: 16px;
 }
 
 .progress-bar::-moz-progress-bar {
-    background-color: #0BBF64;
+    background: rgb(0,153,221);
+background: linear-gradient(0deg, rgba(0,153,221,1) 29%, rgba(148,187,233,1) 100%);
 }
