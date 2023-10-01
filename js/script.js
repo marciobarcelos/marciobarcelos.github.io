@@ -7,7 +7,6 @@ contactForm.addEventListener('submit', function(event){
     let emailForm = document.querySelector('#email').value;
     let mensagemForm = document.querySelector('#mensagem').value;
     
-    // codigo teste
     let formData = new FormData();
     formData.append('nome', nomeForm);
     formData.append('email', emailForm);
@@ -19,13 +18,12 @@ contactForm.addEventListener('submit', function(event){
     })
     .then(response => {
         if (response.ok) {
-            return response.text(); // Se a resposta for bem-sucedida, você pode retornar o texto da resposta
+            return response.text('OK');
         } else {
             throw new Error('Ocorreu um erro durante o envio do formulário.');
         }
     })
     .then(data => {
-        // Limpar campos do formulário e exibir uma mensagem de sucesso
         document.querySelector('#nome').value = '';
         document.querySelector('#email').value = '';
         document.querySelector('#mensagem').value = '';
@@ -34,7 +32,6 @@ contactForm.addEventListener('submit', function(event){
         statusForm.textContent = 'Enviado com sucesso!';
     }, 1500)
     .catch(error => {
-        // Lidar com erros de envio
         console.error('Erro:', error);
         let statusForm = document.querySelector('#status');
         statusForm.textContent = 'Erro ao enviar o formulário.';
