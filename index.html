@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Márcio Barcelos - Personal Website</title>
+    <title>Márcio Barcelos</title>
 
+    <link rel="icon" href="assets/image/mbarcelos-icon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@300&family=Darker+Grotesque&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/main-action.css">
+    <link rel="stylesheet" href="css/icon-menu.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main-title.css">
     <link rel="stylesheet" href="css/main-subtitle.css">
@@ -29,9 +31,12 @@
     
 </head>
 <body>
-    <header>
-        <a href="#home" class="logo-header">marciobarcelos</a>
-        <nav>
+    <header class="main-header">
+        <a href="#home" class="logo-header">marcio<strong>barcelos</strong></a>
+
+        <a href="#menu" class="icon-menu">Abrir Menu</a>
+
+        <nav id="menu" class="menu">
             <a class="main-action" onclick="window.location.href='#skills'">Skills</a>
             <a class="main-action" onclick="window.location.href='#projetos'">Projetos</a>
             <a class="main-action" onclick="window.location.href='#sobre'">Sobre</a>
@@ -47,7 +52,7 @@
             <div class="main-box">
                 <h4>hey, I'm</h4>
                 <h2 class="main-title">Márcio Barcelos</h2>
-                <h3 class="main-subtitle -subtitle" >frontend developer</h3>
+                <h3 class="main-subtitle -tirth" >a frontend developer</h3>
             </div>
             
             <div class="navigation">
@@ -118,9 +123,9 @@
             </article>
 
             <article class="skill-tec">
-                <img class="icon" src="assets/image/ux.png" alt="Logo Git">
+                <img class="icon" src="assets/image/wordpress.png" alt="Logo Git">
                 <div class="right">
-                    <h3 class="title">UX/UI</h3>
+                    <h3 class="title">WordPress</h3>
                     <progress class="progress-bar" max="100" value="70">70%</progress>
                 </div>
             </article>
@@ -202,7 +207,8 @@
         </form>
     </div>
     
-    <button id="back-to-top" title="Voltar ao Topo">↑ <br>Topo</button>
+    <button id="back-to-top" title="Voltar ao Topo">↑</button>
+    
 
     <footer class="main-footer">
         <a class="action-footer" href="https://www.linkedin.com/in/marcio-barcelos/" target="_blank">

@@ -1,20 +1,31 @@
 body {
-    background-color: #fffaf0 /*#0f0f0f*/;
+    background-color: #0d1117;
 }
 
-header {
+.main-header {
     justify-content: space-between;
     border-bottom: 2px solid #C3C0B8;
-    padding: 2px 2px;
+    padding: 10px 20px;
     display: flex;
     align-items: center;
 }
 
+@media (max-width: 768px) {
+    .main-header > .menu {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .main-header > .icon-menu {
+        display: none;
+    }
+}
+
 .logo-header {
     font-family: 'Darker Grotesque', sans-serif;
-    font-weight: 600;
     font-size: 28px;
     margin-left: 30px;
-    color: #111111;
+    color: #FFFAF0;
     text-decoration: none;
 }

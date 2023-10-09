@@ -1,10 +1,8 @@
 .main-action {
-    color: #0f0f0f;
+    color: #FFFAF0;
     font-size: 22px;
     text-decoration: none;
     font-family: 'Darker Grotesque', sans-serif;
-    font-weight: 600;
-    padding: 15px 6px;
     display: inline-flex;
     align-items: center;
     margin-right: 30px;
