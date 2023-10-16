@@ -3,5 +3,9 @@
     color: #FFFAF0;
     text-align: left;
     font-weight: normal;
+    font-size: 42px;
 }
 
+.main-subtitle.-tirth {
+    font-size: 34px;
+}

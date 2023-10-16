@@ -1,10 +1,11 @@
 .card-project {
     display: flex;
     justify-content: center;
-    width: 210px;
-    height: 220px;
+    align-items: center;
 }
 
-.logo {
+.card-project .logo {
     border-radius: 4px;
+    width: 210px;
+    height: 210px;
 }

@@ -12,15 +12,4 @@
     max-width: 70px;
 }
 
-.skill-tec .right {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-.skill-tec .title {
-    margin-bottom: 9px;
-}
-
-
 

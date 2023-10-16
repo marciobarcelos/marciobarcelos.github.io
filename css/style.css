@@ -10,22 +10,19 @@ body {
     align-items: center;
 }
 
-@media (max-width: 768px) {
-    .main-header > .menu {
-        display: none;
-    }
+.logo-mbp {
+    border-radius: 50%;
 }
 
-@media (min-width: 768px) {
-    .main-header > .icon-menu {
-        display: none;
-    }
-}
-
-.logo-header {
+.logo-name {
     font-family: 'Darker Grotesque', sans-serif;
     font-size: 28px;
     margin-left: 30px;
     color: #FFFAF0;
     text-decoration: none;
+}
+
+.lg-header {
+    display: inline-flex;
+    align-items: center;
 }

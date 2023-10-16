@@ -2,7 +2,6 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Márcio Barcelos</title>
 
     <link rel="icon" href="assets/image/mbarcelos-icon.ico" type="image/x-icon">
@@ -11,7 +10,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@300&family=Darker+Grotesque&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/main-action.css">
-    <link rel="stylesheet" href="css/icon-menu.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main-title.css">
     <link rel="stylesheet" href="css/main-subtitle.css">
@@ -32,11 +30,12 @@
 </head>
 <body>
     <header class="main-header">
-        <a href="#home" class="logo-header">marcio<strong>barcelos</strong></a>
+        <div class="lg-header">
+            <img class="logo-mbp" src="assets/image/logo-mbp.png" alt="">
+            <a href="#home" class="logo-name">marciobarcelos</a>
+        </div>
 
-        <a href="#menu" class="icon-menu">Abrir Menu</a>
-
-        <nav id="menu" class="menu">
+        <nav class="menu">
             <a class="main-action" onclick="window.location.href='#skills'">Skills</a>
             <a class="main-action" onclick="window.location.href='#projetos'">Projetos</a>
             <a class="main-action" onclick="window.location.href='#sobre'">Sobre</a>
@@ -45,14 +44,11 @@
     </header>
     
     <section class="main-banner">
-        <div>
-            <img class="personal-image" src="assets/image/mbp.png" alt="marcio barcelos logo">
-        </div>
         <div class="wrapper">
             <div class="main-box">
-                <h4>hey, I'm</h4>
-                <h2 class="main-title">Márcio Barcelos</h2>
-                <h3 class="main-subtitle -tirth" >a frontend developer</h3>
+                <h4>olá, eu sou</h4>
+                <h2 class="main-title">Marcio Barcelos</h2>
+                <h3 class="main-subtitle -tirth" >desenvolvedor frontend</h3>
             </div>
             
             <div class="navigation">
@@ -62,93 +58,58 @@
         </div>
     </section>
 
-    <section class="main-section">
+    <section class="main-section -skills">
         <h2 class="main-title -second" id="skills">Skills</h2>
         
         <div class="wrapper-skill">
             <article class="skill-tec">
                 <img class="icon" src="assets/image/html.png" alt="Logo HTML">
-                <div class="right">
                     <h3 class="title">HTML</h3>
-                    <progress class="progress-bar" max="100" value="70">70%</progress>
-                </div>
             </article>
 
             <article class="skill-tec">
                 <img class="icon" src="assets/image/ico_css3.png" alt="Logo CSS3">
-                <div class="right">
                     <h3 class="title">CSS</h3>
-                    <progress class="progress-bar" max="100" value="70">70%</progress>
-                </div>
             </article>
 
             <article class="skill-tec">
                 <img class="icon" src="assets/image/ico_js.png" alt="Logo JavaScript">
-                <div class="right">
                     <h3 class="title">JavaScript</h3>
-                    <progress class="progress-bar" max="100" value="70">70%</progress>
-                </div>
-            </article>
-
-            <article class="skill-tec">
-                <img class="icon" src="assets/image/ico_react.png" alt="Logo React">
-                <div class="right">
-                    <h3 class="title">React</h3>
-                    <progress class="progress-bar" max="100" value="70">70%</progress>
-                </div>
-            </article>
-
-            <article class="skill-tec">
-                <img class="icon" src="assets/image/ico_angular.png" alt="Logo Angular">
-                <div class="right">
-                    <h3 class="title">Angular</h3>
-                    <progress class="progress-bar" max="100" value="70">70%</progress>
-                </div>
-            </article>
-
-            <article class="skill-tec">
-                <img class="icon" src="assets/image/ico_nodejs.png" alt="Logo NodeJS">
-                <div class="right">
-                    <h3 class="title">NodeJS</h3>
-                    <progress class="progress-bar" max="100" value="70">70%</progress>
-                </div>
             </article>
 
             <article class="skill-tec">
                 <img class="icon" src="assets/image/ico_typescript.png" alt="Logo TypeScript">
-                <div class="right">
                     <h3 class="title">TypeScript</h3>
-                    <progress class="progress-bar" max="100" value="70">70%</progress>
-                </div>
             </article>
 
             <article class="skill-tec">
-                <img class="icon" src="assets/image/wordpress.png" alt="Logo Git">
-                <div class="right">
-                    <h3 class="title">WordPress</h3>
-                    <progress class="progress-bar" max="100" value="70">70%</progress>
-                </div>
+                <img class="icon" src="assets/image/ico_react.png" alt="Logo React">
+                    <h3 class="title">React</h3>
+            </article>
+
+            <article class="skill-tec">
+                <img class="icon" src="assets/image/ico_nodejs.png" alt="Logo NodeJS">
+                    <h3 class="title">NodeJS</h3>
+            </article>
+
+            <article class="skill-tec">
+                <img class="icon" src="assets/image/ico_angular.png" alt="Logo Angular">
+                    <h3 class="title">Angular</h3>
             </article>
 
             <article class="skill-tec">
                 <img class="icon" src="assets/image/bootstrap.png" alt="Logo Git">
-                <div class="right">
                     <h3 class="title">Bootstrap</h3>
-                    <progress class="progress-bar" max="100" value="70">70%</progress>
-                </div>
             </article>
 
             <article class="skill-tec">
                 <img class="icon" src="assets/image/sass.png" alt="Logo Git">
-                <div class="right">
                     <h3 class="title">Sass</h3>
-                    <progress class="progress-bar" max="100" value="70">70%</progress>
-                </div>
             </article>
         </div>
     </section>
 
-    <section class="main-section -projects" id="projetos">
+    <section class="main-section" id="projetos">
         <h2 class="main-title -second">Projetos</h2>
         
         <div class="wrapper-card">
@@ -160,7 +121,7 @@
             </a>
             <a href="#" target="_blank">
                 <figure class="card-project">
-                    <img class="logo" src="assets/image/gogo-delivery.PNG" alt="">
+                    <img class="logo" src="assets/image/groove-box.png" alt="">
                 </figure>
             </a>
             <a href="#" target="_blank">
@@ -172,7 +133,7 @@
     </section>
 
     <section class="main-section">
-        <h2 class="main-title -second" id="sobre">Sobre</h2>
+        <h2 class="main-title -second" id="sobre">Sobre mim</h2>
             <p class="main-description">
             Olá! Sou o Marcio, um Desenvolvedor Front-End apaixonado por criar experiências incríveis na web. Minha jornada no desenvolvimento web começou com HTML e CSS, onde aprendi a arte de criar layouts atraentes e responsivos.
             <br>

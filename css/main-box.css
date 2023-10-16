@@ -1,16 +1,11 @@
 .main-box {
+    margin-top: 52px;
     text-align: center;
     display: inline-block;
-    cursor: pointer;
-    width: 475px;
+    width: 900px;
     justify-content: space-between;
 }
 
-.main-box .main-subtitle {
-    font-family: 'Darker Grotesque', sans-serif;
-    font-size: 38px;
-}
-
-.navigation {
-    padding-right: 193px;
+.main-box .main-title {
+    margin-bottom: 28px;
 }
