@@ -1,14 +1,21 @@
 .skill-tec {
     display: flex;
+    flex-direction: column;
     align-items: center;
     font-family: 'Darker Grotesque', sans-serif;
     font-size: 27px;
     margin-bottom: 38px;
     color: #FFFAF0;
+    text-align: center;
+    height: 150px;
+    width: 108px;
+}
+
+.skill-tec .title {
+    margin-bottom: 10px;
 }
 
 .skill-tec .icon {
-    margin-right: 25px;
     max-width: 70px;
 }
 

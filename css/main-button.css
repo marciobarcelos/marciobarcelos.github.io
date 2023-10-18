@@ -1,6 +1,6 @@
 .main-button {
   display: inline-block;
-  padding: 8px 26px;
+  padding: 6px 26px;
   cursor: pointer;
   font-family: 'Darker Grotesque', sans-serif;
   font-size: 22px;
@@ -8,7 +8,7 @@
   color: #FFFAF0;
   margin-right: 0px;
   text-align: center;
-  border-radius: 52px;
+  border-radius: 4px;
   box-sizing: border-box;
   background: #0a66c2;
   transition: transform 200ms linear, opacity .5s ease-in, background-color .5s ease-out;

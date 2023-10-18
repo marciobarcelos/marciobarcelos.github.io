@@ -18,7 +18,7 @@
   height: 50px;
 }
 
-.icon:hover {
+.social-media:hover {
   transition: opacity 0.5s ease-in, background-color 0.5s ease-out;
   transform: scale(1.24);
 }
