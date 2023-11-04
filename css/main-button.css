@@ -2,13 +2,14 @@
   display: inline-block;
   padding: 6px 26px;
   cursor: pointer;
+  border: 2px solid transparent ;
   font-family: 'Darker Grotesque', sans-serif;
   font-size: 22px;
   text-decoration: none;
   color: #FFFAF0;
   margin-right: 0px;
   text-align: center;
-  border-radius: 4px;
+  border-radius: 20px;
   box-sizing: border-box;
   background: #0a66c2;
   transition: transform 200ms linear, opacity .5s ease-in, background-color .5s ease-out;
@@ -31,8 +32,8 @@
 
 .main-button:hover,
 #back-to-top:hover {
-  border-color: #FFFAF0;
-  background-color: #0099DD;
+  border:2px solid #FFFAF0;
+  background-color: transparent;
   color: #FFFAF0;
   transition: opacity .5s ease-in, background-color .5s ease-out;
   transform: scale(1.08);
